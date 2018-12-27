@@ -1,0 +1,16 @@
+Resources:
+  PlaylistsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: PlayLists
+      AttributeDefinitions:
+        - AttributeName: uid
+          AttributeType: S
+        - AttributeName: items
+          AttributeType: L
+      KeySchema:
+        - AttributeName: uid
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
