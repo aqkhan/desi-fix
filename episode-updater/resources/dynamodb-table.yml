@@ -1,5 +1,5 @@
 Resources:
-  PlaylistsTable:
+  PlayLists:
     Type: AWS::DynamoDB::Table
     Properties:
       TableName: PlayLists
@@ -11,6 +11,8 @@ Resources:
       KeySchema:
         - AttributeName: uid
           KeyType: HASH
+        - AttributeName: items
+          KeyType: RANGE
       ProvisionedThroughput:
-        ReadCapacityUnits: ${self:custom.tableThroughput}
-        WriteCapacityUnits: ${self:custom.tableThroughput}
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5

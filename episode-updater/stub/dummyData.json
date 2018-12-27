@@ -1,0 +1,142 @@
+[
+    {
+      "channelId": "5c2542a11ff0325681ff73c2",
+      "tags": [
+        "labore",
+        "elit",
+        "nulla",
+        "minim",
+        "et",
+        "elit",
+        "adipisicing"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Carlene Spencer"
+        },
+        {
+          "id": 1,
+          "name": "Walton Beard"
+        },
+        {
+          "id": 2,
+          "name": "Karina Shields"
+        }
+      ],
+      "greeting": "Hello, undefined! You have 4 unread messages.",
+      "favoriteFruit": "strawberry"
+    },
+    {
+      "channelId": "5c2542a151fbdc5e5207a8ff",
+      "tags": [
+        "cillum",
+        "minim",
+        "elit",
+        "exercitation",
+        "minim",
+        "qui",
+        "ut"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Christian Davidson"
+        },
+        {
+          "id": 1,
+          "name": "Edna Kinney"
+        },
+        {
+          "id": 2,
+          "name": "Salazar Romero"
+        }
+      ],
+      "greeting": "Hello, undefined! You have 8 unread messages.",
+      "favoriteFruit": "banana"
+    },
+    {
+      "channelId": "5c2542a1ba844177d2150660",
+      "tags": [
+        "elit",
+        "laborum",
+        "amet",
+        "veniam",
+        "laboris",
+        "elit",
+        "do"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Lucy Stevenson"
+        },
+        {
+          "id": 1,
+          "name": "Estrada Daugherty"
+        },
+        {
+          "id": 2,
+          "name": "Mcgee Mccoy"
+        }
+      ],
+      "greeting": "Hello, undefined! You have 10 unread messages.",
+      "favoriteFruit": "apple"
+    },
+    {
+      "channelId": "5c2542a1ab35ea11edf2961f",
+      "tags": [
+        "sunt",
+        "incididunt",
+        "adipisicing",
+        "deserunt",
+        "nisi",
+        "velit",
+        "veniam"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Dena Simmons"
+        },
+        {
+          "id": 1,
+          "name": "Gutierrez Harrington"
+        },
+        {
+          "id": 2,
+          "name": "Holder Callahan"
+        }
+      ],
+      "greeting": "Hello, undefined! You have 2 unread messages.",
+      "favoriteFruit": "strawberry"
+    },
+    {
+      "channelId": "5c2542a1d33af08e590ec071",
+      "tags": [
+        "exercitation",
+        "labore",
+        "voluptate",
+        "culpa",
+        "consectetur",
+        "culpa",
+        "enim"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Aguirre Jones"
+        },
+        {
+          "id": 1,
+          "name": "Harrell Durham"
+        },
+        {
+          "id": 2,
+          "name": "Brooks Alford"
+        }
+      ],
+      "greeting": "Hello, undefined! You have 4 unread messages.",
+      "favoriteFruit": "strawberry"
+    }
+  ]
