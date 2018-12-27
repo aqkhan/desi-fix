@@ -4,7 +4,7 @@ let sampleJson = require('./stub/dummyData.json');
 // Set the region 
 AWS.config.update({region: 'us-east-1'});
 
-module.exports.hello = async (event) => {
+module.exports.hello = (event) => {
   var ddb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
   const newItem = AWS.DynamoDB.Converter.marshall(
     {
