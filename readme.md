@@ -17,7 +17,7 @@ Developed using serverless-framework, nodejs, AWS SDK & DynamoDB.
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars1.githubusercontent.com/u/4011536?s=460&v=4" width="100px;"/><br /><sub><b>Sara Vieira</b></sub>](http://aqkhan.ninja)<br />[💻](https://github.com/aqkhan "Code") |
+| [<img src="https://avatars1.githubusercontent.com/u/4011536?s=460&v=4" width="100px;"/><br /><sub><b>A Q Khan</b></sub>](http://aqkhan.ninja)<br />[💻](https://github.com/aqkhan "Code") |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- ALL-CONTRIBUTORS-LIST: START - Do not remove or modify this section -->
