@@ -67,6 +67,8 @@ iamRoleStatements:
 #    - exclude-me-dir/**
 
 functions:
+  hello:
+    handler: handler.hello
   getPlaylists:
     handler: main.getPlaylists
 
