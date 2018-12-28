@@ -28,7 +28,7 @@ module.exports.getPlaylists = async (event) => {
                         // Marshall
                         
                         const marshalled = AWS.DynamoDB.Converter.marshall({
-                            channelId, publishedAt, title, thumbnails, playListId: piece.id, channelTitle
+                            channelId, publishedAt, title, thumbnails, playListId: piece.id, channelTitle, lastUpdatedAt: Date.now()
                         });
         
                         const params = {
