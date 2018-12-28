@@ -52,7 +52,7 @@ iamRoleStatements:
         - dynamodb:DeleteItem
       # Restrict our IAM role permissions to
       # the specific table for the stage
-      Resource: "rn:aws:dynamodb:us-east-1:370286705794:table/ChannelPlayLists"
+      Resource: "arn:aws:dynamodb:us-east-1:370286705794:table/playLists"
 # you can define service wide environment variables here
 #  environment:
 #    variable1: value1
@@ -67,8 +67,6 @@ iamRoleStatements:
 #    - exclude-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
   getPlaylists:
     handler: main.getPlaylists
 

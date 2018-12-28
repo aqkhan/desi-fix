@@ -8,7 +8,7 @@ module.exports.hello = async (event) => {
   var ddb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
   const newItem = AWS.DynamoDB.Converter.marshall(
     {
-      channelId: 'MARSHALLED03',
+      channelId: 'MARSHALLED07',
       string: 'foo',
       list: ['fizz', 'buzz', 'pop'],
       map: {

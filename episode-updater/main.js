@@ -1,6 +1,7 @@
 'use strict';
 const fetch = require('node-fetch');
 const AWS = require('aws-sdk');
+const _ = require('lodash');
 const channelId = `UC-lHJZR3Gqxm24_Vd_AJ5Yw`;
 const config = require('./config');
 const url = `https://www.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&channelId=${channelId}&maxResults=${config.YT_MAX_RESULTS}&key=${config.YT_TOKEN}`;
@@ -14,28 +15,35 @@ module.exports.getPlaylists = async (event, context) => {
         try {
             const response = await fetch(url);
             const json = await response.json();
-            const params = {
-                TableName: config.AWS_DYNAMO_DB_TABLE,
-                Item: {
-                    channelId: channelId
-                    // items: json.items
-                }
-            };
-            
-            // DynamoDB content below
-            docClient.put(params, function(err, data){
-                if(err) {
-                    // Do something you idiot!
-                    console.log('Error entering data in DynamoDB: ', err)
-                }
-                else {
-                    console.log('Success: ', data.items)
-                }
+            let dataNeeded = [];
+
+            _.forEach( json.items, (piece, key) => {
+                const { publishedAt, channelId, title, thumbnails } = piece.snippet;
+                
+                // Marshall
+                
+                const marshalled = AWS.DynamoDB.Converter.marshall({
+                    channelId, publishedAt, title, thumbnails, playListId: piece.id
+                });
+
+                const params = {
+                    TableName: config.AWS_DYNAMO_DB_TABLE,
+                    Item: marshalled
+                };
+
+                dataNeeded.push(params);
             });
+
+            return dataNeeded;
+
         } catch (error) {
             console.log(error);
         }
     };
-    await getData(url);
-    console.log('Outside');
+    let dataReady = await getData(url);
+
+    for(let i = 0; i <= (dataReady.length - 1); i++) {
+        let res = await ddb.putItem(dataReady[i]).promise();
+        console.log('Res: ', i);
+    }
 }
