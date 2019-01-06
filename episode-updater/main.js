@@ -53,3 +53,25 @@ module.exports.getPlaylists = async (event) => {
         }
     }
 }
+
+module.exports.getVideosFromPlayList = async(event) => {
+    if(event) {
+        const playListId = event.pathParameters.playListId;
+        
+        let url = config.YT_PLAYLIST_VIDEOS + playListId;
+        try {
+            let resp = await fetch(url);
+            let json = await resp.json();
+            console.log('API response: ', json);
+            return {
+                body: JSON.stringify(json)
+            }
+        }
+        catch(err) {
+            console.log('An error occured while retrieving results: ', err)
+            return {
+                err
+            }
+        }
+    }
+}

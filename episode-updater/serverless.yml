@@ -75,6 +75,10 @@ functions:
     handler: channels/main.uname2ChannelId
     events:
       - http: GET /api/channelInfo/{channel?}
+  getPlayListVideos:
+    handler: main.getVideosFromPlayList
+    events:
+      - http: GET /api/playListVideos/{playListId?}
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
