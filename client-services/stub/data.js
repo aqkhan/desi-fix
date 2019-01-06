@@ -43,7 +43,7 @@ module.exports.dummy = {
             source: 'yt',
             link: '',
             episodeCount: 85,
-            playlistId: ''
+            playListId: ''
           },
           {
             uuid: '',
@@ -53,7 +53,7 @@ module.exports.dummy = {
             source: 'yt',
             link: '',
             episodeCount: 71,
-            playlistId: ''
+            playListId: ''
           },
           {
             uuid: '',
@@ -63,7 +63,7 @@ module.exports.dummy = {
             source: 'yt',
             link: '',
             episodeCount: 63,
-            playlistId: ''
+            playListId: ''
           }
         ],
         movies: [
