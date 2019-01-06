@@ -6,9 +6,10 @@ Developed using serverless-framework, nodejs, AWS SDK & DynamoDB.
 
 ## Services
 
-- [ ] Channel name to ID converter
+- [x] Channel name to ID converter
 - [x] Channel playlist retriever Lambda Function
-- [ ] Videos retrieval from playlists
+- [x] Videos retrieval from playlists
+- [ ] Single video content (news, movies etc)
 
 ### Channel PlayList Retriever
 ```sls invoke [optional:local] --function getPlaylists --path path/to/json/file```
