@@ -9,7 +9,7 @@
   "dependencies": {
     "aws-sdk": "^2.382.0",
     "lodash": "^4.17.11",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.6.7",
     "serverless": "^1.35.1",
     "serverless-http": "^1.5.5",
     "serverless-offline": "^3.20.2"
